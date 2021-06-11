@@ -1,8 +1,9 @@
+import socket
 import cv2
 import numpy as np
 from numpy.core.numeric import full
 np.set_printoptions(threshold=np.inf)
-HOST = '192.168.1.104'  # Standard loopback interface address (localhost)
+HOST = '192.168.1.105'  # Standard loopback interface address (localhost)
 PORT = 65433
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((HOST,PORT))
